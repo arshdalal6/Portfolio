@@ -115,7 +115,12 @@ body {
     animation-delay: .6s;
 }
 
-
+.myimg >img {
+    border-radius: 50%;
+    margin-top: 25vh;
+    float: right;
+    margin-right: 7%;
+}
 
 .home-content > p {
     position: relative;
@@ -123,6 +128,9 @@ body {
     margin: 20px 0 50px;
     line-height: 1.2;
 }
+
+
+
 
 .home-content p::before{
     content: '';
@@ -207,6 +215,7 @@ body {
     border: solid;
     font-size: rem;
     border-radius: 50%;
+    margin-left: 10px;
     color: #193c4a;
 
 
