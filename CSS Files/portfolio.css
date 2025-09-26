@@ -52,16 +52,7 @@ body {
 
 }
 
-
-/* Resume-ify */
-
-.content {
-    overflow-y: hidden;
-    height: 126vh;
-    display: block;
-    align-items: center;
-}
-h1 {
+#main-header{
     position: relative;
     text-align: center;
     font-size: 56px;
@@ -71,60 +62,105 @@ h1 {
     margin-top: 10%;
 }
 
-.Resume-Ify{
+
+/* Docs Clone */
+
+.content {
     display: flex;
-    height: 7100%;
-    width: auto;
-    margin-left: 5%;
-    margin-right: 5%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+    padding-top: 25px;
+}
+
+
+.uconn-meal-planning,
+.Docs-Clone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    height: 500px;
+    max-width: 1400px;
+    max-width: 1400px;
+}
+
+.project-info{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    background-color: #7153c3;
+}
+
+.project-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+    max-width: 50%;
     background-color: #315565;
-    border-radius: 6.5%;
 }
 
-.Resume-Ify{
-    padding: 3%;
+.project-picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 50%;
+    overflow-y: hidden;
 }
 
-.Resume-Ify > img {
-    padding-right: 2%;
-    border-radius: 20%;
-    width: 250%;
-    height: auto;
+.project-picture > img{
+    min-width: 100%;
+    min-height: 100%;
 }
 
-
-.text > p {
-    flex: 1; /* text takes the right half */
+.project-details > p{
     display: inline-block;
     position: relative;
-    margin-left: 3%;
-    margin-top: 15%;
-    max-width: 95%;
     padding: 5px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
     text-align: justify;
     overflow-y: hidden;
-  }
-  
-.text p::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #77a8b8;
-    animation: showRight 1s forwards;
-    animation-delay: .1s;
 }
+
+.project-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    min-width: 100%;
+    min-height: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.project-buttons > button{
+    height: 70px;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    background-color: #8d6f40;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
 
 .text > button {
     position: relative;
     display: inline-flex;
     align-items: center;
-    background-color: #ca9238;
     justify-content: center;
     height: 70px;
     border-radius: 8px;
@@ -137,131 +173,26 @@ h1 {
     color: rgb(255, 255, 255);
 }
 
-.text button::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 0%;
-    z-index: -1;
-    transition: .4s;
-}
-
-
-.text button:hover::before{
-    background-color: #000000;
-    height: 100%;
-}
-
-.text > button:hover {
+.project-buttons > button:hover {
     background-color: #ca9238;
+    transform: translateY(-2px);
 }
 
 
 
 /* Meal Plan */
 
-
-
-.content2 {
-    height: 126vh;
-    display: block;
-    align-items: center;
-    overflow-y: hidden;
-    margin-bottom: 50px;
-}
-
-
-.Meal_Plan{
+.uconn-meal-planning .project-info{
     display: flex;
-    height: 7100%;
-    width: auto;
-    margin-left: 5%;
-    margin-right: 5%;
-    background-color: #fbf3eb;
-    border-radius: 6.5%;
+    flex-direction: row-reverse;
+    height: 100%;
 }
 
-.Meal_Plan{
-    padding: 3%;
-}
-
-.Meal_Plan > img {
-    margin-left: 0;
-    padding-right: 5%;
-    width: 275%;
-    height: auto;
-}
-
-.text2{
+.uconn-meal-planning .project-details{
     background-color: #2c5b4d;
-    box-shadow: 0 0 0 50px #2c5b4d; /* Create a background-like shadow */
 }
 
-
-.text2 > p {
-    flex: 1; /* text takes the right half */
-    display: inline-block;
-    position: relative;
-    margin-left: 10%;
-    margin-top: 15%;
-    max-width: 95%;
-    padding: 5px;
-    font-size: 18px;
-    line-height: 1.5;
-    font-weight: 400;
-    text-align: justify;
-    overflow-y: hidden;
-  }
-  
-.text2 p::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #77a8b8;
-    animation: showRight 1s forwards;
-    animation-delay: .1s;
-}
-
-.text2 > button {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    background-color: #7153c3;
-    justify-content: center;
-    height: 70px;
-    border-radius: 8px;
-    padding: 10px;
-    margin-left: 20%;
-    margin-top: 12.5%;
-    z-index: 1;
-    font-size: 19px;
-    font-weight: 600;
-    color: rgb(255, 255, 255);
-}
-
-.text2 button::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 0%;
-    z-index: -1;
-    transition: .4s;
-}
-
-
-.text2 button:hover::before{
-    background-color: #000000;
-    height: 100%;
-}
-
-.text2 > button:hover {
+.uconn-meal-planning .project-buttons > button{
     background-color: #7153c3;
 }
 
